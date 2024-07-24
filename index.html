@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An online coffee shop for selling coffee and coffee related products.">
+    <title>Meow Coffee Store</title>
+    <!--This link provides icons from Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/style.css">
+</head>
+
+<body>
+<!-- Start of Header Section -->
+   <header>
+    <!-- Logo -->
+    <img class="pointer" src="images/meow-logo.png" alt="Meow Coffee Shop Logo" height="45rem" width="45rem">
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="nav_links">
+            <li class="transform border-radius"><a href="#" tabindex="0">Home</a></li>
+            <li class="transform border-radius"><a href="#">Products</a> <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                <ul class="drop-down-menu">
+                    <li class="transform"><a href="#">Coffee</a></li>
+                    <li class="transform"><a href="#">Coffee Machines</a></li>
+                    <li class="transform"><a href="#">Mugs</a></li>
+                </ul>
+            </li>
+            <li class="transform border-radius"><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- Search Box -->
+    <div id="search-box" class="border-radius">
+        <form action="#">
+            <button id="search-btn" class="pointer no-border-outline" aria-label="Search for products">
+                <i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i>
+            </button>
+            <input type="search" name="search-field" id="search-product" class="border-radius no-border-outline" 
+            placeholder=" Search for products here" autocomplete="on"> 
+        </form>
+    </div>
+    <!-- Sign in/Sign up Button -->
+   <a href="#">
+    <button id="sign" class="pointer transform border-radius color-white no-border-outline">
+        Sign in/Sign up
+    </button>
+   </a> 
+   <!-- Shopping Cart Icon -->
+    <a href="#" aria-label="Redirects user to the shopping cart">
+        <button id="shopping-cart"  class="pointer transform no-border-outline" aria-label="Redirects user to the shopping cart">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+        </button>
+    </a> 
+   </header> 
+   <!-- End of Header Section -->
+
+   <!-- Start of Main Section -->
+   <main>
+    <!-- Start of Hero Section -->
+    <section id="hero-section">
+        <!-- Container for Content and Image Divs -->
+        <div id="content-view"> 
+            <!-- Div 1 -->
+            <div id="content">
+                <h1>Welcome to Meow: Where Coffee Meets Cat-itude!</h1>
+                <h2>A Cat-tivating Coffee Experience</h2>
+                <p>At Meow, we're more than just a coffee shop – we're your daily dose of caffeine with a side of 
+                    feline charm. Nestled in the heart of the city, we're your purr-fect destination for all things 
+                    coffee and coffee products.</p>
+                    <a href="#" aria-label="Redirects user to learn more page">
+                        <button id="learn-more" class="pointer border-radius no-border-outline">Learn More</button></a>
+            </div>
+            <!-- Div 2 -->
+            <div id="content-img-view">
+                <img src="images/content-img.jpg" alt="Coffee Cup">
+            </div>
+        </div>   
+    </section>
+    <!-- End of Hero Section -->
+    <!-- Start of Products Section -->
+   <h2 id="products-heading">Products</h2>
+   <section id="products-section" class="center">
+    <!-- Product 1 -->
+    <div class="product-card transform border-radius" tabindex="0">
+        <!-- Product Image -->
+        <img src="images/house-blend.webp" alt="House Blend">
+        <!-- Product Content (Name, Description, and Price) -->
+        <div class="card-content">
+            <h3 class="pointer">House Blend</h3>
+            <p>Ground Coffees - Medium Roast Coffees</p>
+            <p><span>25.95</span> SAR</p>
+            <!-- Product Rating and Add To Cart Button -->
+            <div class="container flex">
+                <div class="rating center border-radius">
+                    <p<i class="fa-solid fa-star" style="color: #f0f2f5;"></i> 4.6 (155)</p>
+                </div>
+                <button class="pointer border-radius no-border-outline" aria-label="Adds the product to shopping cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-card transform border-radius" tabindex="0">
+        <!-- Product Image -->
+        <img src="images/veranda-blend.webp" alt="House Blend">
+        <!-- Product Content (Name, Description, and Price) -->
+        <div class="card-content">
+            <h3 class="pointer">Veranda Blend</h3>
+            <p>Ground Coffees - Blonde Roast Coffees</p>
+            <p><span>30.05</span> SAR</p>
+            <!-- Product Rating and Add To Cart Button -->
+            <div class="container flex">
+                <div class="rating center border-radius">
+                    <p<i class="fa-solid fa-star" style="color: #f0f2f5;"></i> 4.3 (255)</p>
+                </div>
+                <button class="pointer border-radius no-border-outline bg-color-black" aria-label="Adds the product to shopping cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-card transform border-radius" tabindex="0">
+        <img src="images/caffe-verona.webp" alt="House Blend">
+        <!-- Product Content (Name, Description, and Price) -->
+        <div class="card-content">
+            <h3 class="pointer">Café Verona</h3>
+            <p>Ground Coffees - Dark Roast Coffees</p>
+            <p><span>27.95</span> SAR</p>
+            <!-- Product Rating and Add To Cart Button -->
+            <div class="container flex">
+                <div class="rating center border-radius">
+                    <p<i class="fa-solid fa-star" style="color: #f0f2f5;"></i> 4.9 (149)</p>
+                </div>
+                <button class="pointer border-radius no-border-outline bg-color-black" aria-label="Adds the product to shopping cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+   </section>
+   <!-- End of Products Section -->
+   </main>
+   <!-- End of Main Section -->
+
+   <!-- Start of Footer Section -->
+   <footer>
+    <div id="div-1">
+        <!-- Shop Links -->
+        <div id="shop">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#">Coffee</a></li>
+                <li><a href="#">Coffee Machines</a></li>
+                <li><a href="#">Mugs</a></li>
+            </ul>
+        </div>
+
+        <!-- Help Links -->
+        <div id="help">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Q&A</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- About Links -->
+        <div id="about">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div id="newsletter">
+            <h4>Stay Connected with us!</h4>
+            <p>Don't miss out on the latest updates, promotions, and exclusive offers from Meow!
+                We're here to keep you in the loop with all things exciting, from new arrivals to special events and more.
+                Join our mailing list to unlock a world of benefits!
+            </p>
+            <form action="#" class="flex">
+                <div id="email-box" class="border-radius">
+                    <i class="fa-regular fa-envelope" style="color: #000000;"></i>
+                    <input type="email" name="email-field" id="email" class="border-radius no-border-outline"
+                    placeholder="Email address" autocomplete="on">
+                </div>
+                <button id="subscribe" class="pointer border-radius no-border-outline">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Copyright  -->
+    <div id="div-2" class="flex">
+        <p class="copyright">Developed with love by FATIMA ALNASSER, Meow &copy; 2023.</p>
+        <p class="social-icons">
+            <a href="https://twitter.com/" aria-label="Redirects the user to twitter">
+                <i class="fa-brands fa-square-twitter" style="color: #000000;"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Redirects the user to facebook">
+                <i class="fa-brands fa-square-facebook" style="color: #000000;"></i></a>
+            <a href="https://www.instagram.com/" aria-label="Redirects the user to instagram">
+                <i class="fa-brands fa-square-instagram" style="color: #000000;"></i></a>
+            <a href="https://www.pinterest.com/" aria-label="Redirects the user to pinterest">
+                <i class="fa-brands fa-square-pinterest" style="color: #000000;"></i></a>
+        </p>
+    </div>
+   </footer>
+   <!-- End of Footer Section -->
+</body>
+</html>

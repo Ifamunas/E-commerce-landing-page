@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Martian+Mono&family=Mooli&family=Open+Sans&family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/********** Reusable Styling Classes  **********/
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.transform {
+  transition: transform 0.1s;
+}
+
+.border-radius {
+  border-radius: 25px;
+}
+
+.flex {
+  display: flex;
+}
+
+.no-border-outline {
+  border: none;
+  outline: none;
+}
+
+/********** Header and its contents styling  **********/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 1em 5%;
+  top: 0;
+  position: sticky;
+  z-index: 10;
+  min-width: 100%;
+  height: auto;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0.35em;
+  margin: 0 0.2rem;
+}
+.nav_links li:hover {
+  background-color: #222;
+  transform: scale(1.1);
+}
+.nav_links li a {
+  color: #fff;
+}
+
+/********** Product Drop-down Menu Styling **********/
+ul li:hover ul.drop-down-menu {
+  display: block;
+}
+
+.drop-down-menu {
+  min-width: 100%;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 9;
+  display: none;
+  font-size: 0.9em;
+  background-color: #000;
+}
+.drop-down-menu li {
+  display: block;
+}
+.drop-down-menu li:hover {
+  background: #000;
+  opacity: 0.8;
+  transform: scale(1);
+}
+.drop-down-menu li a:hover {
+  color: #ffd95a;
+}
+
+#search-box {
+  min-width: 15rem;
+  min-height: 1.8rem;
+  padding: 0.2em;
+  background-color: #fff;
+  align-items: center;
+  position: relative;
+}
+#search-box form input {
+  min-width: 85%;
+  min-height: 85%;
+  position: absolute;
+  padding-left: 1em;
+}
+#search-box form button {
+  background: none;
+  margin-left: 0.5rem;
+}
+
+header a button {
+  background: none;
+  padding: 1em;
+}
+header a button:hover {
+  transform: scale(1.1);
+}
+
+#sign {
+  color: #fff;
+  background-color: #262a56;
+  padding: 0.5em;
+  width: 8rem;
+}
+
+#shopping-cart {
+  font-size: large;
+}
+
+/********** Hero Section Styling **********/
+#hero-section {
+  background-image: url("/images/hero-background.avif");
+  position: relative;
+  padding: 3em;
+  min-width: 100%;
+  height: 90vh auto;
+}
+#hero-section h1,
+#hero-section p {
+  color: #000;
+  margin: 1rem;
+}
+#hero-section h2 {
+  color: #b8621b;
+  margin: 1rem;
+}
+#hero-section #content-view {
+  display: flex;
+  background-color: #fff;
+  min-width: 100%;
+  padding: 2em;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2), 0px 6px 20px 0px rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+#hero-section #content-img-view {
+  min-width: 40%;
+}
+#hero-section #content-img-view img {
+  width: 100%;
+}
+#hero-section #content {
+  margin-top: 2.5rem;
+}
+#hero-section #content p {
+  max-width: 75%;
+}
+#hero-section #content #learn-more {
+  padding: 0.5em;
+  margin: 1rem;
+  width: 7rem;
+  background-color: #000;
+  color: #fff;
+}
+
+/********** Products Section Styling **********/
+#products-section {
+  flex-wrap: wrap;
+  padding: 1em 5%;
+  margin-bottom: 2rem;
+}
+#products-section .product-card {
+  max-width: 20rem;
+  height: auto;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 1rem 1.8rem;
+}
+#products-section .product-card:hover {
+  transform: scale(1.1);
+}
+#products-section .product-card img {
+  width: 100%;
+  height: auto;
+}
+#products-section .card-content {
+  padding: 1em;
+  margin: 0;
+  border-top: 1px #e3e0e0 solid;
+  background-color: #f2f2f2;
+}
+#products-section .card-content h3 {
+  margin-bottom: 0.5rem;
+}
+#products-section .card-content h3:hover {
+  text-decoration: underline;
+}
+#products-section .card-content p {
+  padding: 0;
+  margin: 0;
+  font-size: small;
+}
+#products-section .card-content p span {
+  font-weight: bolder;
+  font-size: large;
+}
+#products-section .card-content .container {
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+#products-section .card-content .container button {
+  padding: 0.3rem;
+  height: 1.8rem;
+  width: 8rem;
+  background-color: #000;
+  color: #fff;
+}
+#products-section .card-content .container .rating {
+  background-color: #146c94;
+  width: 4.5rem;
+  font-size: xx-small;
+  height: 1.8rem;
+  padding: 0.5em;
+}
+
+#products-heading {
+  padding: 1em 0;
+  margin-left: 3rem;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: #b8621b;
+}
+
+/********** Footer Section Styling **********/
+footer {
+  background-color: #e3ccae;
+  min-width: 100%;
+}
+footer #div-1 {
+  padding: 1em 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer #div-1 div ul li {
+  list-style: none;
+  margin-bottom: 0.3rem;
+}
+footer #div-1 div ul li a {
+  color: #555;
+}
+footer #div-1 div ul li a:hover {
+  text-decoration: underline;
+}
+footer #div-1 div h4 {
+  margin-bottom: 0.5rem;
+}
+footer #div-1 #shop,
+footer #div-1 #about,
+footer #div-1 #help,
+footer #div-1 #newsletter {
+  padding: 1em;
+  margin: 1rem;
+  font-size: 0.9em;
+  color: #222;
+}
+footer #div-1 #newsletter {
+  border-left: 1px #555 solid;
+  padding-left: 2em;
+}
+footer #div-1 #newsletter p {
+  font-size: 0.8em;
+  margin: 0;
+  max-width: 28rem;
+  text-align: justify;
+}
+footer #div-1 #newsletter #email-box {
+  width: 15rem;
+  height: 1.8rem;
+  padding-left: 0.5rem;
+  background-color: #f2f2f2;
+  align-items: center;
+  margin-top: 0.5rem;
+  border: 1px solid #999;
+  position: relative;
+}
+footer #div-1 #newsletter #email-box i {
+  margin-top: 0.4rem;
+}
+footer #div-1 #newsletter #email-box input {
+  padding: 0.3em 0.7em;
+  max-width: 85%;
+  height: auto;
+  background-color: #f2f2f2;
+  position: absolute;
+}
+footer #div-1 #newsletter #email-box:focus-within {
+  border: 1px solid #b8621b;
+}
+footer #div-1 #newsletter #email-box:hover {
+  outline: 1px solid #b8621b;
+}
+footer #div-1 #newsletter button {
+  padding: 0.3em 0.5em;
+  margin: 0.5rem;
+  background-color: #262a56;
+  height: 1.8rem;
+  font-size: small;
+  color: #fff;
+}
+footer #div-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 6%;
+  background-color: #b8621b;
+}
+footer #div-2 .copyright {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+footer #div-2 .social-icons {
+  font-size: clamp(xx-small, large);
+}
+
+@media (max-width: 40em) {
+  header {
+    padding: 1rem 3rem;
+    display: block;
+  }
+  #search-box {
+    display: block;
+    width: 80%;
+  }
+  #content-img-view {
+    top: 0;
+  }
+  #content-view {
+    display: block;
+  }
+  footer {
+    display: block;
+  }
+  #div-1 {
+    display: block;
+  }
+  #newsletter {
+    border: none;
+    padding: 0 1em;
+  }
+  #div-2 {
+    padding: 0 2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
